@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 - Flexbox Component Library</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/task-2.css">
+  </head>
+  <body>
+    <main class="task-page">
+      <a class="back-link" href="index.html">← All tasks</a>
+      <h1>Task 2: Component library</h1>
+
+      <!-- 1. Navigation bar -->
+      <section class="component">
+        <h2>Navigation bar</h2>
+        <nav class="navbar">
+          <a class="navbar-logo" href="#">Acme</a>
+          <ul class="navbar-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Solutions for enterprise teams</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">About us</a></li>
+          </ul>
+          <div class="navbar-actions">
+            <button class="btn btn--ghost">Log in</button>
+            <button class="btn btn--primary">Sign up</button>
+          </div>
+        </nav>
+      </section>
+
+      <!-- 2. Card row -->
+      <section class="component">
+        <h2>Card row</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Starter kit</h3>
+            <p>Short description.</p>
+            <button class="btn btn--primary">Learn more</button>
+          </article>
+          <article class="card">
+            <h3>Growth plan</h3>
+            <p>A description that runs quite a bit longer than the others, so the card needs to grow taller without breaking the row's alignment or squashing the button.</p>
+            <button class="btn btn--primary">Learn more</button>
+          </article>
+          <article class="card">
+            <h3>Team bundle</h3>
+            <p>Medium length description that sits somewhere between the two extremes shown by its neighbors.</p>
+            <button class="btn btn--primary">Learn more</button>
+          </article>
+        </div>
+      </section>
+
+      <!-- 3. Pagination -->
+      <section class="component">
+        <h2>Pagination bar</h2>
+        <div class="pagination">
+          <div class="pagination-center">
+            <button class="btn btn--ghost" aria-label="Previous page">&laquo;</button>
+            <div class="pagination-pages">
+              <a href="#" class="page">1</a>
+              <a href="#" class="page page--active">2</a>
+              <a href="#" class="page">3</a>
+              <a href="#" class="page">4</a>
+              <a href="#" class="page">5</a>
+            </div>
+            <button class="btn btn--ghost" aria-label="Next page">&raquo;</button>
+          </div>
+          <p class="pagination-count">128 results</p>
+        </div>
+      </section>
+
+      <!-- 4. Comment block -->
+      <section class="component">
+        <h2>Comment block</h2>
+        <article class="comment">
+          <img class="comment-avatar" src="https://i.pravatar.cc/96" alt="">
+          <div class="comment-body">
+            <p class="comment-author">Aigerim K.</p>
+            <p class="comment-text">This is a much longer comment than the usual one-liner, written on purpose to prove that the text wraps neatly beside the avatar and never slides underneath it, no matter how many lines it takes up.</p>
+          </div>
+        </article>
+      </section>
+
+      <!-- 5. Pricing table -->
+      <section class="component">
+        <h2>Pricing table</h2>
+        <div class="pricing">
+          <article class="plan">
+            <h3>Basic</h3>
+            <p class="plan-price">$9<span>/mo</span></p>
+            <ul class="plan-features">
+              <li>1 project</li>
+              <li>Community support</li>
+            </ul>
+            <button class="btn btn--ghost">Choose Basic</button>
+          </article>
+          <article class="plan plan--recommended">
+            <p class="plan-badge">Most popular</p>
+            <h3>Pro</h3>
+            <p class="plan-price">$29<span>/mo</span></p>
+            <ul class="plan-features">
+              <li>Unlimited projects</li>
+              <li>Priority support</li>
+              <li>Team roles</li>
+            </ul>
+            <button class="btn btn--primary">Choose Pro</button>
+          </article>
+          <article class="plan">
+            <h3>Enterprise</h3>
+            <p class="plan-price">$99<span>/mo</span></p>
+            <ul class="plan-features">
+              <li>Custom limits</li>
+              <li>Dedicated manager</li>
+            </ul>
+            <button class="btn btn--ghost">Choose Enterprise</button>
+          </article>
+        </div>
+      </section>
+
+    </main>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+:root {
+  --color-ink: #1f2937;
+  --color-surface: #f8fafc;
+  --color-accent: #2563eb;
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --mondrian-blue: #1c4fd6;
+  --mondrian-yellow: #f0c419;
+  --mondrian-red: #d6281c;
+  --mondrian-black: #111111;
+  --mondrian-white: #f4f4f0;
+  font-family: Arial, sans-serif;
+  color: var(--color-ink);
+  background: var(--color-surface);
+  --color-card-bg: #ffffff;
+  --color-border: #e2e8f0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: var(--color-accent);
+}
+
+.project-home,
+.task-page {
+  width: min(92%, 70rem);
+  margin: var(--space-4) auto;
+}
+
+.project-home nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: var(--space-3);
+}
